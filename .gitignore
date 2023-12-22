@@ -15,3 +15,4 @@ pom.xml.asc
 .lsp/.cache
 
 resources/puzzle_inputs
+.calva/output-window
