@@ -6,4 +6,6 @@
   :dependencies [[org.clojure/clojure "1.10.0"]]
   :main ^:skip-aot adventofcode.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}}
+  :aliases {"puzzle-input" ["run" "adventofcode.core.read-puzzle-input" "2023" "1"]
+            "foo" ["run" "adventofcode.core/foo"]})

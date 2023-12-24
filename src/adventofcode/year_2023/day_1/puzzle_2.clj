@@ -1,16 +1,8 @@
 ;; https://adventofcode.com/2023/day/1
 
-(ns adventofcode.year-2023.day-1
-  (:require [clojure.string :as str]))
-
-(defn solve-puzzle-1 [input]
-  (->> (str/split input #"\n")
-       (map #(as-> % v
-               (str/replace v #"\D" "")
-               (str/split v #"")
-               (str (first v) (last v))
-               (Integer/parseInt v)))
-       (reduce +)))
+(ns adventofcode.year-2023.day-1.puzzle-2
+  (:require [adventofcode.year-2023.day-1.puzzle-1 :as p1 ]
+            [clojure.string :as str]))
 
 (def digit-word
   {"one" "1"
@@ -37,10 +29,10 @@
      (re-pattern (str ".*(" word-group ")\\D*?$"))
      #(str (get % 0) (get digit-word (get % 1)))))
 
-(defn solve-puzzle-2 [input] 
+(defn solve-puzzle [input] 
   (->> (str/split input #"\n")
          (map #(->	%
                    (replace-first-word)
                    (replace-last-word)))
          (str/join "\n")
-         (solve-puzzle-1)))
+         (p1/solve-puzzle)))

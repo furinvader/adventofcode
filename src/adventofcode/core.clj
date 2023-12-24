@@ -1,6 +1,7 @@
 (ns adventofcode.core
   (:gen-class)
-  (:require [adventofcode.year-2023.day-1 :as y2023d1p1]))
+  (:require [adventofcode.year-2023.day-1.puzzle-1 :as y2023d1p1]
+            [adventofcode.year-2023.day-1.puzzle-2 :as y2023d1p2]))
 
 (defn read-puzzle-input
   [year day]
@@ -10,8 +11,8 @@
        (catch java.io.FileNotFoundException _
          (println "No puzzle input found for year:" year " day:" day))))
 
-(def solved-puzzles {"2023" {"1" {"1" y2023d1p1/solve-puzzle-1
-                                  "2" y2023d1p1/solve-puzzle-2}}})
+(def solved-puzzles {"2023" {"1" {"1" y2023d1p1/solve-puzzle
+                                  "2" y2023d1p2/solve-puzzle}}})
 
 (defn -main
   [& args]
