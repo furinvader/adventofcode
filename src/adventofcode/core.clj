@@ -7,7 +7,7 @@
   (try (slurp (str "resources/puzzle_inputs/year_" year
                    "/day_" day
                    ".txt"))
-       (catch java.io.FileNotFoundException e
+       (catch java.io.FileNotFoundException _
          (println "No puzzle input found for year:" year " day:" day))))
 
 (def solved-puzzles {"2023" {"1" {"1" y2023d1p1/solve-puzzle-1

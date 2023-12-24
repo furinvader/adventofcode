@@ -1,7 +1,7 @@
 (ns adventofcode.year-2023.day-1-test
   (:require [adventofcode.year-2023.day-1 :refer [solve-puzzle-1
                                                   solve-puzzle-2]]
-            [clojure.test :refer :all]))
+            [clojure.test :refer [deftest is testing]]))
 
 (def puzzle-1-input "1abc2
 pqr3stu8vwx

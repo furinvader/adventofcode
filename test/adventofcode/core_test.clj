@@ -1,3 +1,3 @@
 (ns adventofcode.core-test
-  (:require [adventofcode.core :refer :all]
-            [clojure.test :refer :all]))
+  (:require [adventofcode.core]
+            [clojure.test]))
