@@ -7,5 +7,7 @@
   :main ^:skip-aot adventofcode.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
-  :aliases {"puzzle-input" ["run" "adventofcode.core.read-puzzle-input" "2023" "1"]
-            "foo" ["run" "adventofcode.core/foo"]})
+  :aliases {"y2023d1p1" ["run" "-m" "adventofcode.year-2023.day-1.puzzle-1"
+                         "resources/puzzle_inputs/y2023_d1.txt"]
+            "y2023d1p2" ["run" "-m" "adventofcode.year-2023.day-1.puzzle-2"
+                         "resources/puzzle_inputs/y2023_d1.txt"]})
