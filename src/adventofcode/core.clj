@@ -10,7 +10,8 @@
        (catch java.io.FileNotFoundException e
          (println "No puzzle input found for year:" year " day:" day))))
 
-(def solved-puzzles {"2023" {"1" {"1" y2023d1p1/solve-puzzle-1}}})
+(def solved-puzzles {"2023" {"1" {"1" y2023d1p1/solve-puzzle-1
+                                  "2" y2023d1p1/solve-puzzle-2}}})
 
 (defn -main
   [& args]
