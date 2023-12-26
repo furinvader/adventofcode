@@ -13,5 +13,5 @@ treb7uchet")
     (is (= 15 (solve-puzzle "12345")))
     (is (= 33 (solve-puzzle "3")))
     (is (= 44 (solve-puzzle "abc4cdef4ghij"))))
-  (testing "Solves puzzle 1"
+  (testing "Solves 2023 day 1 puzzle 1"
     (is (= 142 (solve-puzzle puzzle-input)))))

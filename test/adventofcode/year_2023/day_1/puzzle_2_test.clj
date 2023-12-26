@@ -19,5 +19,5 @@ zoneight234
     (is (= 28 (solve-puzzle "twonethreeight")))
     (is (= 22 (solve-puzzle "abc2345twoabc")))
     (is (= 38 (solve-puzzle "threeight"))))
-  (testing "Solves puzzle 2"
+  (testing "Solves 2023 day 1 puzzle 2"
     (is (= 281 (solve-puzzle puzzle-input)))))
