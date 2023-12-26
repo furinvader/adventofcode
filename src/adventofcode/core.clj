@@ -8,4 +8,4 @@
          (println "No puzzle input not found: " input-file-path))))
 
 (defn -main []
-  (println "To solve a puzzle, run an alias like `lein run y2023d1p1`"))
+  (println "To solve a puzzle, run an alias like `lein y2023d1p1`"))
