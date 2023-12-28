@@ -14,4 +14,6 @@
             "y2023d2p1" ["run" "-m" "adventofcode.year-2023.day-2.puzzle-1"
                          "resources/puzzle_inputs/y2023_d2.txt"]
             "y2023d2p2" ["run" "-m" "adventofcode.year-2023.day-2.puzzle-2"
-                         "resources/puzzle_inputs/y2023_d2.txt"]})
+                         "resources/puzzle_inputs/y2023_d2.txt"]
+            "y2023d3p1" ["run" "-m" "adventofcode.year-2023.day-3.puzzle-1"
+                         "resources/puzzle_inputs/y2023_d3.txt"]})
