@@ -1,8 +1,7 @@
 ;; https://adventofcode.com/2023/day/3
 
 (ns adventofcode.year-2023.day-3.puzzle-1
-  (:require [adventofcode.core :refer [read-puzzle-input-file]]
-            [clojure.set :as set]
+  (:require [clojure.set :as set]
             [clojure.string :as str]))
 
 (defn parse-positions [pattern input]
@@ -65,6 +64,3 @@
       (map :adjacent)
       (flatten)
       (reduce +)))
-
-(defn -main [input-file-path]
-  (println (solve-puzzle (read-puzzle-input-file input-file-path))))
