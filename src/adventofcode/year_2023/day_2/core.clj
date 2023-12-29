@@ -10,5 +10,5 @@ Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red
 Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green")
 
 (def -main (create-puzzle-main
-            [p1/solve-puzzle p2/solve-puzzle]
-            example-input))
+            [[p1/solve-puzzle example-input]
+             [p2/solve-puzzle example-input]]))

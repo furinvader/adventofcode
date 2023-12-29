@@ -1,14 +1,7 @@
 (ns adventofcode.year-2023.day-1.puzzle-2-test
-  (:require [adventofcode.year-2023.day-1.puzzle-2 :refer [solve-puzzle]]
+  (:require [adventofcode.year-2023.day-1.core :refer [example-input-2]]
+            [adventofcode.year-2023.day-1.puzzle-2 :refer [solve-puzzle]]
             [clojure.test :refer [deftest is testing]]))
-
-(def puzzle-input "two1nine
-eightwothree
-abcone2threexyz
-xtwone3four
-4nineeightseven2
-zoneight234
-7pqrstsixteen")
 
 (deftest solve-puzzle-test
   (testing "Combines the first and last digit, including words, of a string to two-digit number"
@@ -20,4 +13,4 @@ zoneight234
     (is (= 22 (solve-puzzle "abc2345twoabc")))
     (is (= 38 (solve-puzzle "threeight"))))
   (testing "Solves 2023 day 1 puzzle 2"
-    (is (= 281 (solve-puzzle puzzle-input)))))
+    (is (= 281 (solve-puzzle example-input-2)))))

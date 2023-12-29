@@ -15,5 +15,5 @@
 .664.598..")
 
 (def -main (create-puzzle-main
-            [p1/solve-puzzle p2/solve-puzzle]
-            example-input))
+            [[p1/solve-puzzle example-input]
+             [p2/solve-puzzle example-input]]))

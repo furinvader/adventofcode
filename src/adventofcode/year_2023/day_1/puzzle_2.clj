@@ -1,8 +1,7 @@
 ;; https://adventofcode.com/2023/day/1
 
 (ns adventofcode.year-2023.day-1.puzzle-2
-  (:require [adventofcode.core :refer [read-puzzle-input-file]]
-            [adventofcode.year-2023.day-1.puzzle-1 :as p1 ]
+  (:require [adventofcode.year-2023.day-1.puzzle-1 :as p1 ]
             [clojure.string :as str]))
 
 (def digit-word
@@ -37,6 +36,3 @@
                    (replace-last-word)))
          (str/join "\n")
          (p1/solve-puzzle)))
-
-(defn -main [input-file-path]
-  (println (solve-puzzle (read-puzzle-input-file input-file-path))))
