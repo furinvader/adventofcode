@@ -1,8 +1,7 @@
 ;; https://adventofcode.com/2023/day/2
 
 (ns adventofcode.year-2023.day-2.puzzle-1
-  (:require [adventofcode.core :refer [read-puzzle-input-file]]
-            [clojure.string :as str]))
+  (:require [clojure.string :as str]))
 
 (defn parse-draw [draw]
   (as-> draw d
@@ -38,6 +37,3 @@
 
 (defn solve-puzzle [input]
   (transduce xf-get-correct-game-ids + (parse-games input)))
-
-(defn -main [input-file-path]
-  (println (solve-puzzle (read-puzzle-input-file input-file-path))))
