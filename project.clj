@@ -3,7 +3,8 @@
   :url "https://adventofcode.com/"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url "https://www.eclipse.org/legal/epl-2.0/"}
-  :dependencies [[org.clojure/clojure "1.10.0"]]
+  :dependencies [[org.clojure/clojure "1.10.0"]
+                 [org.clojure/math.numeric-tower "0.0.5"]]
   :main ^:skip-aot adventofcode.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
@@ -12,4 +13,6 @@
             "y2023d2" ["run" "-m" "adventofcode.year-2023.day-2.core"
                        "resources/puzzle_inputs/y2023_d2.txt"]
             "y2023d3" ["run" "-m" "adventofcode.year-2023.day-3.core"
-                       "resources/puzzle_inputs/y2023_d3.txt"]})
+                       "resources/puzzle_inputs/y2023_d3.txt"]
+            "y2023d4" ["run" "-m" "adventofcode.year-2023.day-4.core"
+                       "resources/puzzle_inputs/y2023_d4.txt"]})
