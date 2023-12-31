@@ -8,7 +8,8 @@
 (defn parse-numbers [index target]
   (update target index (comp
                         set
-                        (fn [nums] (map #(Integer/parseInt %) nums))
+                        (fn [nums]
+                          (map #(Integer/parseInt %) nums))
                         #(str/split % #"\s+"))))
 
 (defn parse-card [line]
@@ -22,16 +23,20 @@
        (parse-numbers 1)
        (parse-numbers 2)
        ((fn [[id winning having]]
-          {:id id
-           :winning winning
-           :having having}))))
+          (let [matching (set/intersection winning having)]
+            {:id (Integer/parseInt id)
+             :winning winning
+             :having having
+             :matching matching
+             :matching-amount (count matching)})))))
+
+(defn parse-cards [input]
+  (map parse-card (str/split-lines input)))
 
 (defn solve-puzzle [input]
   (->> input
-       (str/split-lines)
-       (map parse-card)
-       (map (juxt :winning :having))
-       (map (comp count #(apply set/intersection %)))
+       (parse-cards)
+       (map :matching-amount)
        (filter #(< 0 %))
        (map #(int (Math/pow 2 (- % 1))))
        (reduce +)))
