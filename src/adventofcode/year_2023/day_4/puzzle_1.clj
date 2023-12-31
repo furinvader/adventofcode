@@ -1,6 +1,5 @@
 (ns adventofcode.year-2023.day-4.puzzle-1
-  (:require [clojure.math.numeric-tower :as math]
-            [clojure.set :as set]
+  (:require [clojure.set :as set]
             [clojure.string :as str]))
 
 (defn split-numbers [index target]
@@ -34,5 +33,5 @@
        (map (juxt :winning :having))
        (map (comp count #(apply set/intersection %)))
        (filter #(< 0 %))
-       (map #(math/expt 2 (- % 1)))
+       (map #(int (Math/pow 2 (- % 1))))
        (reduce +)))
