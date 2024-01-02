@@ -15,4 +15,6 @@
             "y2023d3" ["run" "-m" "adventofcode.year-2023.day-3.core"
                        "resources/puzzle_inputs/y2023_d3.txt"]
             "y2023d4" ["run" "-m" "adventofcode.year-2023.day-4.core"
-                       "resources/puzzle_inputs/y2023_d4.txt"]})
+                       "resources/puzzle_inputs/y2023_d4.txt"]
+            "y2023d5" ["run" "-m" "adventofcode.year-2023.day-5.core"
+                       "resources/puzzle_inputs/y2023_d5.txt"]})
