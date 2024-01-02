@@ -1,5 +1,3 @@
-;; https://adventofcode.com/2023/day/2
-
 (ns adventofcode.year-2023.day-2.puzzle-1
   (:require [clojure.string :as str]))
 

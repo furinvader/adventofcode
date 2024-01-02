@@ -1,5 +1,3 @@
-;; https://adventofcode.com/2023/day/3
-
 (ns adventofcode.year-2023.day-3.puzzle-1
   (:require [clojure.set :as set]
             [clojure.string :as str]))

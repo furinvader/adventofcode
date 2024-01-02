@@ -1,5 +1,3 @@
-;; https://adventofcode.com/2023/day/3
-
 (ns adventofcode.year-2023.day-3.puzzle-2
   (:require [adventofcode.year-2023.day-3.puzzle-1 :refer [get-parts-with-adjacent-numbers]]))
 
